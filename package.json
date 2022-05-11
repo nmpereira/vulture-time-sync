@@ -1,0 +1,34 @@
+{
+  "name": "vulture-time-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node server/index.js",
+    "devstart": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmpereira/vulture-time-sync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmpereira/vulture-time-sync/issues"
+  },
+  "homepage": "https://github.com/nmpereira/vulture-time-sync#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "jest": "^28.1.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16",
+    "socket.io": "^4.5.0",
+    "supertest": "^6.2.3"
+  }
+}

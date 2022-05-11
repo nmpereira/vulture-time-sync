@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+body,
+html {
+	/* height: 100vh; */
+	overflow: hidden;
+}
+#timestamp {
+	/* display: inline-block;
+	color: red; */
+}
