@@ -6,7 +6,6 @@ class Timer {
 	}
 	start() {
 		this.timeWatch = setInterval(() => {
-			// console.log('start');
 			console.log(this.duration--);
 			this.duration < 0 ? this.reset() : false;
 		}, 1000);
