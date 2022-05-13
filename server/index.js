@@ -3,7 +3,8 @@ const port = process.env.PORT || 3000;
 const path = require('path');
 const { router } = require('./logic/routes');
 const { logger } = require('./helpers/helpers');
-const { Timer } = require('./logic/timer');
+const { timer60 } = require('./logic/times');
+
 const sockets = require('./logic/socket');
 const { app, server } = require('./logic/server');
 const NODE_ENV = process.env.NODE_ENV || 'Local';

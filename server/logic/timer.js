@@ -1,3 +1,5 @@
+const { io, sendTimeStamp } = require('./socket');
+
 class Timer {
 	constructor(roomID, duration) {
 		this.roomID = roomID;
@@ -6,8 +8,9 @@ class Timer {
 	}
 	start() {
 		this.timeWatch = setInterval(() => {
-			console.log(this.duration--);
-			this.duration < 0 ? this.reset() : false;
+			this.duration <= 0 ? this.reset() : false;
+			io.sockets.emit('timestamp', this.duration--);
+			console.log(this.duration);
 		}, 1000);
 	}
 
