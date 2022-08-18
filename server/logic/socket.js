@@ -3,7 +3,7 @@ const { Server } = require('socket.io');
 const { server } = require('./server');
 const io = new Server(server);
 // const { Timer } = require('./timer');
-// const { timer60 } = require('./times');
+const { timer60 } = require('./times');
 
 io.on('connection', (socket) => {
 	const roomID = socket.handshake.headers.referer.split('/').pop();
